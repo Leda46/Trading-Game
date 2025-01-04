@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Seas Trading</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="balance">
+            <span>💰Balance: $<span id="gold-balance">500</span></span>
+        </div>
+
+        <div id="animation-toggle">
+            <label for="rocking-switch">Ocean Animation:</label>
+            <input type="checkbox" id="rocking-switch" unchecked>
+        </div>
+        
+
+        <div id="cities">
+            <span class="section-title">Travel to:</span>
+            <button onclick="travelTo('Port Royal')">Port Royal</button>
+            <button onclick="travelTo('Tortuga')">Tortuga</button>
+            <button onclick="travelTo('Nassau')">Nassau</button>
+        </div>
+
+        <div id="marketplace">
+            <div class="section-title">Marketplace - <span id="current-city">Port Royal</span></div>
+            <div id="resources">
+                <!-- Resource items will be dynamically populated here -->
+            </div>
+        </div>
+
+        <div id="inventory">
+            <div class="section-title">Inventory</div>
+            <div id="inventory-items">
+                <!-- Inventory items will be dynamically populated here -->
+            </div>
+        </div>
+
+        <div id="activity-log">
+            <div class="section-title">Activity Log</div>
+            <ul id="log-entries">
+                <!-- Log entries will be dynamically added here -->
+            </ul>
+        </div>
+
+        <img id="ship-icon" src="ship.png" alt="Ship">
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
