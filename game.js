@@ -17,7 +17,7 @@ let maxWeight = 50; // Maximum weight limit
 let currentWeight = 0;
 
 function calculateWeight() {
-  currentWeight = inventory.gold * 2 + inventory.silver * 1 + inventory.rum * 3; // Example weights
+  currentWeight = inventory.gold * 2 + inventory.silver * 1 + inventory.rum * 3; // Weights
   if (currentWeight > maxWeight) {
       logActivity('You are over the weight limit! Sell items or lose $10 per turn.');
       balance -= 10; // Penalty for exceeding weight limit
@@ -50,7 +50,7 @@ document.body.appendChild(resultMessage);
 const restartButton = document.createElement('button');
 restartButton.id = 'restart-button';
 restartButton.textContent = 'Restart Game';
-restartButton.onclick = () => location.reload(); // Simple page reload to restart
+restartButton.onclick = () => location.reload(); // Reload page to restart
 document.body.appendChild(restartButton);
 }
 function renderMarketplace() {
